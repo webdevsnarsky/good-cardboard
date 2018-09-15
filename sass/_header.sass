@@ -1,0 +1,40 @@
+.header
+	&-logo
+		background: url(../img/logo.png) center no-repeat
+		background-size: 100%
+		width: 191px
+		height: 61px
+	padding: 15px 0
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&__phone
+			/* width: auto */
+			font-size: 22px
+			margin-right: 13px
+			font-family: 'Roboto_Med'
+			font-weight: 400
+			a
+				text-decoration: none
+				color: black
+			&:first-child
+				border-right: 1px solid #cfcfd0
+				padding-right: 13px
+		&__phones
+			display: flex
+			justify-content: flex-end
+			
+@keyframes move
+	from
+		opacity: 0
+		margin-bottom: -150px
+		transform: rotate(0deg) translateY(150px)
+	to
+		margin-bottom: 0
+		opacity: 1
+		transform: rotate(360deg) translateY(0px)
+.animate
+	animation-name: move
+	animation-duration: 1s
+      
